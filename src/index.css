@@ -1,0 +1,115 @@
+body {
+    background: url('image/cat.gif') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #root {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background: rgba(125, 187, 110, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(68, 11, 11, 0.3);
+    text-align: center;
+    color: #a76969;
+  }
+  
+  /* Calculator Styling */
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .display {
+    grid-column: span 4;
+    background: #16a823;
+    padding: 50px;
+    font-size: 2.2rem;
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .button {
+    background: #333;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background: #5050a5;
+  }
+  
+  .button.operator {
+    background: #ff7f50;
+    color: rgb(145, 30, 30);
+    font-weight: italic;
+    margin: 8px;
+  }
+  
+  .button.operator:hover {
+    background: #29bd35;
+  }
+  
+  .button.equal {
+    grid-column: span 2;
+    background: #61dafb;
+    color: #212155;
+    font-weight: bold;
+  }
+  
+  .button.equal:hover {
+    background: #4db5e4;
+  }
+  
+  .button.clear {
+    background: #d9534f;
+    font-weight: bold;
+  }
+  
+  .button.clear:hover {
+    background: #c9302c;
+  }
+  
+  /* Counter Styling */
+  .counter {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(30, 30, 160, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .counter h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .counter button {
+    padding: 12px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .counter button:hover {
+    background: #5050a5;
+  }
