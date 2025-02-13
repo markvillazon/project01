@@ -1,5 +1,5 @@
 body {
-    background: url('image/cat.gif') no-repeat center center;
+  background: url('/cat.gif') no-repeat center center;
     background-size: cover;
     font-family: Arial, sans-serif;
     display: flex;
